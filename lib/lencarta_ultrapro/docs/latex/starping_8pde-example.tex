@@ -1,0 +1,10 @@
+\hypertarget{starping_8pde-example}{\section{starping.\+pde}
+}
+This sketch is a more complex example of using the \hyperlink{class_r_f24}{R\+F24} library for Arduino. Deploy this on up to six nodes. Set one as the 'pong receiver' by tying the role\+\_\+pin low, and the others will be 'ping transmit' units. The ping units unit will send out the value of millis() once a second. The pong unit will respond back with a copy of the value. Each ping unit can get that response back, and determine how long the whole cycle took.
+
+This example requires a bit more complexity to determine which unit is which. The pong receiver is identified by having its role\+\_\+pin tied to ground. The ping senders are further differentiated by a byte in eeprom.
+
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 

@@ -1,0 +1,384 @@
+\hypertarget{classlencarta__ultrapro}{\section{lencarta\+\_\+ultrapro Class Reference}
+\label{classlencarta__ultrapro}\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+}
+
+
+{\ttfamily \#include $<$lencarta\+\_\+ultrapro.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Public Interface}\par
+{\em Methods used to control the strobes }\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlencarta__ultrapro_a050ac8d7f5d956b69d6b660da2ce689a}{lencarta\+\_\+ultrapro} (uint8\+\_\+t ce\+Pin, uint8\+\_\+t cs\+Pin)
+\item 
+void \hyperlink{classlencarta__ultrapro_ae146781ab2b30b7bdc5756077fdfb56e}{begin} (void)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a10aa8bb22fd884847084f11e83180c90}{fire\+Flash} (uint8\+\_\+t $\ast$address)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a3d9cd4ed1024dbdeddea82bbd918cf66}{fire\+Flash} (uint8\+\_\+t id, uint8\+\_\+t group)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a7353e83a0fde358a5e6c2317b7c81f13}{flash\+Power} (uint8\+\_\+t id, uint8\+\_\+t group, uint8\+\_\+t power)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a3133db3a1e30ce98c9a6b2c9761f35ec}{flash\+Power} (uint8\+\_\+t $\ast$address, uint8\+\_\+t power)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a9f43977874a5ec6ca55a7722aeda10fd}{slave\+Mode} (uint8\+\_\+t id, uint8\+\_\+t group, bool state)
+\item 
+bool \hyperlink{classlencarta__ultrapro_ab21ac7822bd1a878c700ec2941d8ead6}{slave\+Mode} (uint8\+\_\+t $\ast$address, bool state)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a76e63a1f419892a2bd6fbb2c7560d7ec}{lamp} (uint8\+\_\+t id, uint8\+\_\+t group, \hyperlink{lencarta__ultrapro_8h_a41957b2109dd20ef9e0ac0820e9034cc}{lencarta\+\_\+lamp\+\_\+state} state)
+\item 
+bool \hyperlink{classlencarta__ultrapro_af901e55aef3f896f848f6fdfac49e44a}{lamp} (uint8\+\_\+t $\ast$address, \hyperlink{lencarta__ultrapro_8h_a41957b2109dd20ef9e0ac0820e9034cc}{lencarta\+\_\+lamp\+\_\+state} state)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a431c3d40a18282132f96228b505f52f8}{lamp\+Power} (uint8\+\_\+t id, uint8\+\_\+t group, uint8\+\_\+t power)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a4ddc9b43c87723a9d280ed928a7ebf8e}{lamp\+Power} (uint8\+\_\+t $\ast$address, uint8\+\_\+t power)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a584f58df4b6dbb3ad9a9682099c2be6b}{sound} (uint8\+\_\+t id, uint8\+\_\+t group, bool state)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a86d33707192d056d23ff8ed8dc339e1b}{sound} (uint8\+\_\+t $\ast$address, bool state)
+\item 
+bool \hyperlink{classlencarta__ultrapro_a0ac47540f880a2c1953cfe74cba2b7c3}{test} (uint8\+\_\+t id, uint8\+\_\+t group)
+\item 
+bool \hyperlink{classlencarta__ultrapro_af83f985d034ec2945badea9398e40e1f}{test} (uint8\+\_\+t $\ast$address)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Library to control Lencarta Ultra\+Pro Studio Lighting 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlencarta__ultrapro_a050ac8d7f5d956b69d6b660da2ce689a}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{lencarta\+\_\+ultrapro}]{\setlength{\rightskip}{0pt plus 5cm}lencarta\+\_\+ultrapro\+::lencarta\+\_\+ultrapro (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{ce\+Pin, }
+\item[{uint8\+\_\+t}]{cs\+Pin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classlencarta__ultrapro_a050ac8d7f5d956b69d6b660da2ce689a}
+Constructor
+
+Creates a new instance. Should be done before using any methods. Takes the two control pins used on the n\+R\+F24\+L01+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ce\+Pin} & The pin connected to Chip Enable on the n\+R\+F24\+L01+ \\
+\hline
+{\em cs\+Pin} & The pin connected to Chip Select on the n\+R\+F24\+L01+ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlencarta__ultrapro_ae146781ab2b30b7bdc5756077fdfb56e}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!begin@{begin}}
+\index{begin@{begin}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}void lencarta\+\_\+ultrapro\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_ae146781ab2b30b7bdc5756077fdfb56e}
+Begin operation of the radio
+
+Should be called in setup() \hypertarget{classlencarta__ultrapro_a10aa8bb22fd884847084f11e83180c90}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!fire\+Flash@{fire\+Flash}}
+\index{fire\+Flash@{fire\+Flash}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{fire\+Flash}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::fire\+Flash (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{address}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a10aa8bb22fd884847084f11e83180c90}
+Fire a single strobe. Takes an address in uint8\+\_\+t array \mbox{[}id,group\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$address} & Array containing \mbox{[}id, group\mbox{]} for target flash \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a3d9cd4ed1024dbdeddea82bbd918cf66}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!fire\+Flash@{fire\+Flash}}
+\index{fire\+Flash@{fire\+Flash}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{fire\+Flash}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::fire\+Flash (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id, }
+\item[{uint8\+\_\+t}]{group}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a3d9cd4ed1024dbdeddea82bbd918cf66}
+Fire a single strobe. Takes an id and group
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the strobe. Between 0-\/9. \\
+\hline
+{\em group} & The group of the strobe. Between 0-\/9. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a7353e83a0fde358a5e6c2317b7c81f13}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!flash\+Power@{flash\+Power}}
+\index{flash\+Power@{flash\+Power}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{flash\+Power}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::flash\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id, }
+\item[{uint8\+\_\+t}]{group, }
+\item[{uint8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a7353e83a0fde358a5e6c2317b7c81f13}
+Set the power of the flash. Flash heads show power as a number between 1.\+0 and 6.\+0. This is translated to between 0 and 49 here. addresses the flash head using the id and group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the strobe. Between 0-\/9. \\
+\hline
+{\em group} & The group of the strobe. Between 0-\/9. \\
+\hline
+{\em power} & Power setting. Between 0 and 49. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a3133db3a1e30ce98c9a6b2c9761f35ec}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!flash\+Power@{flash\+Power}}
+\index{flash\+Power@{flash\+Power}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{flash\+Power}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::flash\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{uint8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a3133db3a1e30ce98c9a6b2c9761f35ec}
+Set the power of the flash. Flash heads show power as a number between 1.\+0 and 6.\+0. This is translated to between 0 and 49 here. Addresses the strobe using an array of \mbox{[}id, group\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the strobe. Between 0-\/9. \\
+\hline
+{\em group} & The group of the strobe. Between 0-\/9. \\
+\hline
+{\em power} & Power setting. Between 0 and 49. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a76e63a1f419892a2bd6fbb2c7560d7ec}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!lamp@{lamp}}
+\index{lamp@{lamp}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{lamp}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::lamp (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id, }
+\item[{uint8\+\_\+t}]{group, }
+\item[{{\bf lencarta\+\_\+lamp\+\_\+state}}]{state}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a76e63a1f419892a2bd6fbb2c7560d7ec}
+Turns the modelling lamp of or off. Addresses using id and group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the strobe. Between 0-\/9. \\
+\hline
+{\em group} & The group of the strobe. Between 0-\/9. \\
+\hline
+{\em state} & The state of the lamp. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{lencarta__ultrapro_8h_a41957b2109dd20ef9e0ac0820e9034cc}{lencarta\+\_\+lamp\+\_\+state}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_af901e55aef3f896f848f6fdfac49e44a}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!lamp@{lamp}}
+\index{lamp@{lamp}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{lamp}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::lamp (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{{\bf lencarta\+\_\+lamp\+\_\+state}}]{state}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_af901e55aef3f896f848f6fdfac49e44a}
+Turns the modelling lamp of or off. Addresses using array of \mbox{[}id, group\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & An array of \mbox{[}id,group\mbox{]} for the target strobe. \\
+\hline
+{\em state} & The state of the lamp. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{lencarta__ultrapro_8h_a41957b2109dd20ef9e0ac0820e9034cc}{lencarta\+\_\+lamp\+\_\+state}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a431c3d40a18282132f96228b505f52f8}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!lamp\+Power@{lamp\+Power}}
+\index{lamp\+Power@{lamp\+Power}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{lamp\+Power}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::lamp\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id, }
+\item[{uint8\+\_\+t}]{group, }
+\item[{uint8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a431c3d40a18282132f96228b505f52f8}
+Sets the power of the modelling lamp. Addresses using id and group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the strobe. Between 0-\/9. \\
+\hline
+{\em group} & The group of the strobe. Between 0-\/9. \\
+\hline
+{\em power} & The power of the modelling lamp. 0-\/49 corresponds to 1.\+0 to 6.\+0 on the strobe's power setting. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a4ddc9b43c87723a9d280ed928a7ebf8e}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!lamp\+Power@{lamp\+Power}}
+\index{lamp\+Power@{lamp\+Power}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{lamp\+Power}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::lamp\+Power (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{uint8\+\_\+t}]{power}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a4ddc9b43c87723a9d280ed928a7ebf8e}
+Sets the power of the modelling lamp. Addresses using array of \mbox{[}id, group\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & An array of \mbox{[}id,group\mbox{]} for the target strobe. \\
+\hline
+{\em power} & The power of the modelling lamp. 0-\/49 corresponds to 1.\+0 to 6.\+0 on the strobe's power setting. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a9f43977874a5ec6ca55a7722aeda10fd}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!slave\+Mode@{slave\+Mode}}
+\index{slave\+Mode@{slave\+Mode}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{slave\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::slave\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id, }
+\item[{uint8\+\_\+t}]{group, }
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a9f43977874a5ec6ca55a7722aeda10fd}
+Sets optical slave mode on the flash head. Addressed using the id and group of the head.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the strobe. Between 0-\/9. \\
+\hline
+{\em group} & The group of the strobe. Between 0-\/9. \\
+\hline
+{\em state} & True for slave mode, false for non-\/slave mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_ab21ac7822bd1a878c700ec2941d8ead6}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!slave\+Mode@{slave\+Mode}}
+\index{slave\+Mode@{slave\+Mode}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{slave\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::slave\+Mode (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_ab21ac7822bd1a878c700ec2941d8ead6}
+Sets optical slave mode on the flash head. Addressed an array of \mbox{[}id, group\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & An array containing address and id of the strobe. \\
+\hline
+{\em state} & True for slave mode, false for non-\/slave mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a584f58df4b6dbb3ad9a9682099c2be6b}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!sound@{sound}}
+\index{sound@{sound}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{sound}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::sound (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id, }
+\item[{uint8\+\_\+t}]{group, }
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a584f58df4b6dbb3ad9a9682099c2be6b}
+Turns beeping on/off on the flash head. Addressed using id and group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the strobe. Between 0-\/9. \\
+\hline
+{\em group} & The group of the strobe. Between 0-\/9. \\
+\hline
+{\em state} & True for beeping on, false for beeping off. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a86d33707192d056d23ff8ed8dc339e1b}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!sound@{sound}}
+\index{sound@{sound}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{sound}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::sound (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{address, }
+\item[{bool}]{state}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a86d33707192d056d23ff8ed8dc339e1b}
+Turns beeping on/off on the flash head. Addressed using id and group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Array containing \mbox{[}id, group\mbox{]}. \\
+\hline
+{\em state} & True for beeping on, false for beeping off. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_a0ac47540f880a2c1953cfe74cba2b7c3}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!test@{test}}
+\index{test@{test}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::test (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{id, }
+\item[{uint8\+\_\+t}]{group}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_a0ac47540f880a2c1953cfe74cba2b7c3}
+Uses a different channel to test whether the strobe is responding. This will only work if the strobe is in test mode. This is acheived by pressing minus with T\+E\+S\+T selected on the strobe. Addressed using id and group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the strobe. Between 0-\/9. \\
+\hline
+{\em group} & The group of the strobe. Between 0-\/9. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+\hypertarget{classlencarta__ultrapro_af83f985d034ec2945badea9398e40e1f}{\index{lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}!test@{test}}
+\index{test@{test}!lencarta\+\_\+ultrapro@{lencarta\+\_\+ultrapro}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}bool lencarta\+\_\+ultrapro\+::test (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{address}
+\end{DoxyParamCaption}
+)}}\label{classlencarta__ultrapro_af83f985d034ec2945badea9398e40e1f}
+Uses a different channel to test whether the strobe is responding. This will only work if the strobe is in test mode. This is acheived by pressing minus with T\+E\+S\+T selected on the strobe. Addressed using an array of \mbox{[}id, group\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & An array containing the \mbox{[}id, group\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the strobe acknowledged the packet. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lencarta__ultrapro_8h}{lencarta\+\_\+ultrapro.\+h}\item 
+lencarta\+\_\+ultrapro.\+cpp\end{DoxyCompactItemize}
