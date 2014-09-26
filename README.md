@@ -30,4 +30,4 @@ Credits
 -------
 Created by Richard Webb for [Zoetrope](http://zoetrope.io) with [Lencarta's](http://lencarta.com/) blessing.
 
-With thanks to J. Coliz's RF24 library which is bundled with this library for convienence.
+With thanks to TMRh20's [fork](https://github.com/TMRh20) of J. Coliz's RF24 library which is bundled with this library for convienence.
