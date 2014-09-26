@@ -25,3 +25,9 @@ byte someOtherStrobe[2] = {5,6};
 strobes.fireFlash(someStrobe);
 strobes.fireFlash(someOtherStrobe);
 ```
+
+Credits
+-------
+Created by Richard Webb for [Zoetrope](http://zoetrope.io) with [Lencarta's](http://lencarta.com/) blessing.
+
+With thanks to J. Coliz's RF24 library which is bundled with this library for convienence.
