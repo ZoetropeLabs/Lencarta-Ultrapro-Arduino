@@ -5,9 +5,11 @@ An Arduino library used to control Lencarta Ultrapro Flash Heads
 
 This library was created for and tested on the UltraPro 300 series of Lencarta's studio flashes. It is likely to work with other flashes in the UltraPro series and possibly other series of flashes but this has not been tested. It allows the flash heads to be controlled remotely using an arduino with an nRF24L01+ radio. The radio should be attached to the normal arduino SPI pins and the CE and CS pin should be specified in the constructor.
 
+There's a blog article about how this library came to exist [here](https://zoetrope-imaging.co.uk/tech-blog/reverse-engineering-wireless-pro-studio-lighting)
+
 Documentation
 -------------
-The documentation can be viewed [here](https://zoetropeimaging.github.io/Lencarta-Ultrapro-Arduino/lib/lencarta_ultrapro/docs/html/classlencarta__ultrapro.html) 
+The documentation can be viewed at `lib/lencarta_ultrapro/docs/html/classlencarta__ultrapro.html`. 
 
 Usage
 -----
